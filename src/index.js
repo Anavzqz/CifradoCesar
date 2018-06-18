@@ -27,3 +27,10 @@ const decifrarTexto = () => {
   //introduccion.style.display = 'none';
   //mensaje.style.display = 'block';
 };
+//cipher.createCipherWithOffset : (offset) => ({
+  //encode(cipher1) => {
+    //return cipher.encode(offset, cipher1)
+  //},
+  //decode(deCipher) => {
+    //return cipher.decode(offset, deCipher)
+  //}

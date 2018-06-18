@@ -38,16 +38,17 @@ window.cipher = {
   //Función para decifrar
   decode: (deCipher,offset) =>  {
 
-    //donde se guarda el texto a cifrar
+    //donde se guarda el texto a decifrar
     let decifrarTexto = "";
     //guarda lo que se transforma a ascii
   let i = 0;
-  //Argumentos para cifrar
+  //Argumentos para decifrar
   for (i= 0; i <= deCipher.length; i++) {
     //espacio y signos
   if(deCipher.charCodeAt(i) >= 32 && deCipher.charCodeAt(i) <= 64) {
-
+//Declarar la variable para asignar un valor de ASCII al signo
       let textCode2 = (deCipher.charCodeAt(i));
+  //concatenar los signos cifrados para formar la palabra
       let unicode2 = String.fromCharCode(textCode2);
       decifrarTexto +=  unicode2;
     } else {
@@ -70,4 +71,5 @@ window.cipher = {
 }
   return decifrarTexto;
   }
-}
+
+  }
