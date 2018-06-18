@@ -1,23 +1,18 @@
 window.cipher = {
   //Función para cifrar texto
-  encode: (cipher1,offset) =>
-  {
-    //Ligar la casilla de cifrar
-    //let cipher = document.getElementById("cipher").value;
-
-    //Ligar la casilla de offset (num. de casillas que se recorre)
-    //let offset = parseInt(document.getElementById("offset").value);
+  encode: (cipher1,offset) => {
     //donde se guarda el texto a cifrar
     let cifrarTexto = "";
     //guarda lo que se transforma a ascii
   let i = 0;
   //Argumentos para cifrar
   for (i = 0; i < cipher1.length; i++) {
-    //espacio
-      if(cipher1.charCodeAt(i)===32) {
+    //espacio y signos
+  if(cipher1.charCodeAt(i) >= 32 && cipher1.charCodeAt(i) <= 64) {
 
-  let unicode = String.fromCharCode(32);
-  cifrarTexto +=  unicode;
+      let textCode = (cipher1.charCodeAt(i));
+      let unicode = String.fromCharCode(textCode);
+      cifrarTexto +=  unicode;
   } else {
   //Condición para las mayusculas
     if (cipher1.charCodeAt(i) >= 65 && cipher1.charCodeAt(i) <= 90) {
@@ -40,30 +35,21 @@ window.cipher = {
   return cifrarTexto;
 },
 
-  //function cipherText() {
-  //let cifrarInput = document.getElementById("cifrarTexto").value;
-  //document.getElementById('deCipher').value = cifrarInput;
-  //}
-
-
   //Función para decifrar
   decode: (deCipher,offset) =>  {
-    //Ligar casilla de decifrado
-    //let deCipher = document.getElementById("deCipher").value;
 
-    //Ligar la casilla de offset (num. de casillas que se recorre)
-    //let offset = parseInt(document.getElementById("offset").value);
     //donde se guarda el texto a cifrar
     let decifrarTexto = "";
     //guarda lo que se transforma a ascii
   let i = 0;
   //Argumentos para cifrar
   for (i= 0; i <= deCipher.length; i++) {
-  //espacio
-    if(deCipher.charCodeAt(i)===32) {
+    //espacio y signos
+  if(deCipher.charCodeAt(i) >= 32 && deCipher.charCodeAt(i) <= 64) {
 
-    let unicode2 = String.fromCharCode(32);
-    decifrarTexto +=  unicode2;
+      let textCode2 = (deCipher.charCodeAt(i));
+      let unicode2 = String.fromCharCode(textCode2);
+      decifrarTexto +=  unicode2;
     } else {
   //mayusculas
     if (deCipher.charCodeAt(i) >= 65 && deCipher.charCodeAt(i) <= 90) {
@@ -85,9 +71,3 @@ window.cipher = {
   return decifrarTexto;
   }
 }
-
-
-
-
-
-//cipher.cifrar();

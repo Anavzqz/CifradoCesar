@@ -5,13 +5,6 @@ let offset1 = document.getElementById("offset");
 //Ligar casilla de decifrado
 let decipherText = document.getElementById("cipher");
 
-//add.eventListener(click, event => {
-//window.cipher.encode(encode.value, offset.value));
-//};
-
-//add.eventListener(click, event => {
-
-
 const cifrarTexto = () => {
   let cipher1 = str.value;
   let offset = parseInt(offset1.value);
