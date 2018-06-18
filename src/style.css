@@ -1,0 +1,30 @@
+/* Estilo general*/
+body {
+  background-image: url("https://images.pexels.com/photos/544980/pexels-photo-544980.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: top;
+  font-family: georgia;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+}
+h1 {
+  font-size: 1.3em;
+}
+.cifrar, .offset, .result{
+  font-size: .775em;
+  padding: 20px 50px;
+  border: 2px solid dimgray;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: white;
+}
+#b1, #b2{
+  margin: auto;
+ 	background-color: black;
+  font-size: .775em;
+    border: 2px solid dimgray;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 30px;
+    cursor: pointer;
+  }

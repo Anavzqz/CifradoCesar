@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cifrado César</title>
+        <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="Introduccion">
+    <p><strong>¿Quieres enviar mensajes sin que tus maestros entiendan lo que escribes? <br>
+    Entonces el cifrado César es lo que necesitas!!</strong></p>
+    <h1>Sigue los pasos</h1>
+    <section>
+      <form class="" action="index.html" method="post">
+    <!-- Input para que el usuario introduzca el texto a cifrar -->
+
+1.Ingresa tu mensaje:<br>
+  <input type="text" name="cifrar" value="" id="cipher" class="cifrar" placeholder="Mensaje">
+  </br>
+<!-- Input para que el usuario introduzca el numero de lugares que recorre el abcdario -->
+2.Ahora una clave:<br>
+    <input type="number" min="0" max="150" id="offset" class="offset"></br>
+    <br><input type="button" value="Cifrar" id="b1" onClick="cifrarTexto()">
+    <input type="button" value="Decifrar" id="b2" onClick="decifrarTexto()"></br>
+<br></br>
+    </div>
+<!-- Input para que el usuario introduzcael texto a descifrar -->
+<div class="Resultado">
+  3.Tu texto cifrado es:
+    <br><input type="text" value"" id="result" class="result" name="decifrado"></br>
+<p>No olvides darle la clave a tu amig@ para que pueda decifrar tu mensaje!</p>
+</div>
+    </form>
+    </section>
+    <div id="root"></div>
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
